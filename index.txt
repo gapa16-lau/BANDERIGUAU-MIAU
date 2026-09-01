@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú | Banderiguau & Miau</title>
+    <style>
+        :root {
+            --primary: #7B2E15;
+            --accent: #E65100;
+            --yellow: #F9C02D;
+            --bg: #FFF8EB;
+            --card-bg: #FFFFFF;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg); color: #333; margin: 0; padding: 0; }
+        header { background: var(--card-bg); text-align: center; padding: 15px; border-bottom: 3px solid var(--yellow); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        header img { max-width: 90px; height: auto; }
+        header h1 { color: var(--primary); margin: 5px 0 0; font-size: 1.5rem; }
+        .hero-banner { width: 100%; max-height: 250px; object-fit: cover; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .category-title { color: var(--primary); border-bottom: 2px dashed var(--accent); padding-bottom: 8px; margin-top: 30px; font-size: 1.4rem; text-transform: uppercase; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-top: 15px; }
+        .card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; }
+        .card img { width: 100%; height: 180px; object-fit: cover; }
+        .card-content { padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .item-header { display: flex; justify-content: space-between; align-items: baseline; }
+        .item-title { font-weight: bold; color: var(--primary); font-size: 1.1rem; }
+        .price { font-weight: bold; color: var(--accent); font-size: 1.1rem; }
+        .description { font-size: 0.85rem; color: #666; margin: 8px 0; }
+        .options { background: #FFF3E0; padding: 10px; border-radius: 8px; font-size: 0.85rem; margin-top: 10px; }
+        footer { text-align: center; padding: 20px; background: var(--primary); color: #FFF; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo (1).jpeg" alt="Banderiguau & Miau Logo">
+        <h1>Banderiguau & Miau</h1>
+    </header>
+
+    <img src="portada 2 (2).jpeg" alt="Portada Banderiguau & Miau" class="hero-banner">
+
+    <div class="container">
+        <!-- Banderillas Saladas -->
+        <h2 class="category-title">Banderillas Saladas</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="BANDERILLA SALADA 1_2.jpeg" alt="Banderilla de Salchicha Clásica">
+                <div class="card-content">
+                    <div class="item-header">
+                        <span class="item-title">Banderilla de Salchicha</span>
+                        <span class="price">$80</span>
+                    </div>
+                    <p class="description">Van aderezadas con queso amarillo fundido, catsup y salsa picante.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="BANDERILLA SANDERILLA SALADA 3_2.jpeg" alt="Banderilla Flami Hot">
+                <div class="card-content">
+                    <div class="item-header">
+                        <span class="item-title">Banderilla Mixta</span>
+                        <span class="price">$100</span>
+                    </div>
+                    <p class="description">Salchicha con queso. Aderezada con queso amarillo fundido, catsup y salsa picante.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="BANDERILLA SALADA 2_2.jpg" alt="Banderilla de Papa">
+                <div class="card-content">
+                    <div class="item-header">
+                        <span class="item-title">Banderilla Queso Manchego</span>
+                        <span class="price">$120</span>
+                    </div>
+                    <p class="description">Rellena de suave queso manchego fundido.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="options">
+            <strong>Elige tu Topping Salado (1 incluido):</strong>
+            <ul>
+                <li>Clásico (Panko) — $0</li>
+                <li>Flami Hot — $0</li>
+                <li>Papa — $10</li>
+            </ul>
+        </div>
+
+        <!-- Banderillas Dulces -->
+        <h2 class="category-title">Banderillas Dulces</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-content">
+                    <div class="item-header">
+                        <span class="item-title">Banderilla de Plátano</span>
+                        <span class="price">$80</span>
+                    </div>
+                    <p class="description">Cobertura clásica panko crujiente.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="item-header">
+                        <span class="item-title">Plátano con Queso Manchego</span>
+                        <span class="price">$100</span>
+                    </div>
+                    <p class="description">La mezcla perfecta entre dulce y salado.</p>
+                </div>
+            </div>
+        </div>
+        <div class="options">
+            <strong>Elige 2 Aderezos Dulces Incluidos:</strong>
+            <p>Lechera, Cajeta, Mermelada, Chocolate Hershey's, Nutella</p>
+        </div>
+
+        <!-- Michibonless y Papas -->
+        <h2 class="category-title">Especialidades y Papas</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="MICHIBONLESS.jpeg" alt="Michibonless">
+                <div class="card-content">
+                    <div class="item-header">
+                        <span class="item-title">Michibonless</span>
+                        <span class="price">$100</span>
+                    </div>
+                    <p class="description">Bonless crujientes sobre una cama de papas a la francesa.</p>
+                    <div class="options">
+                        Salsas: Naturales | Mango Habanero | BBQ | Salsa Picante
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="item-header">
+                        <span class="item-title">Papas a la Francesa</span>
+                        <span class="price">$70</span>
+                    </div>
+                    <p class="description">Clásicas o Flami Hot. Servidas con queso fundido, catsup y salsa picante.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Gemini_Generated_Image_pwg3o1pwg3o1pwg3.jpg" alt="Espiropapas">
+                <div class="card-content">
+                    <div class="item-header">
+                        <span class="item-title">Espiropapas</span>
+                        <span class="price">$20 / $25</span>
+                    </div>
+                    <p class="description">Clásicas ($20) o Flami Hot ($25).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bebidas -->
+        <h2 class="category-title">Bebidas</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="BUBBLE PAW MORA AZUL.jpeg" alt="Bubble Paws Mora Azul">
+                <div class="card-content">
+                    <div class="item-header">
+                        <span class="item-title">Bubble Paws Mora Azul</span>
+                        <span class="price">$80</span>
+                    </div>
+                    <p class="description">Bebida burbujeante con perlas explosivas e hielo.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="BUBBLE PAW FRESA.jpeg" alt="Bubble Paws Fresa">
+                <div class="card-content">
+                    <div class="item-header">
+                        <span class="item-title">Bubble Paws Fresa</span>
+                        <span class="price">$80</span>
+                    </div>
+                    <p class="description">Bebida refrescante con perlas explosivas de fresa.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="BUBBLE PAW FRAMBUESA.jpeg" alt="Bubble Paws Frutos Rojos">
+                <div class="card-content">
+                    <div class="item-header">
+                        <span class="item-title">Bubble Paws Frutos Rojos</span>
+                        <span class="price">$80</span>
+                    </div>
+                    <p class="description">Bebida burbujeante de frutos rojos con perlas explosivas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Banderiguau & Miau</strong> - ¡El sabor que te hace mover la cola!</p>
+    </footer>
+
+</body>
+</html>
