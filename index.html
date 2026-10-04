@@ -35,15 +35,23 @@
 
     <!-- HERO / PORTADA HEADER -->
     <header class="relative bg-brand-dark text-white">
-        <div class="h-64 sm:h-80 w-full relative overflow-hidden">
-            <img src="https://i.ibb.co/SXHwxxBY/portada-2-2.jpg" alt="Portada Menú" class="w-full h-full object-cover opacity-60">
+        <div class="h-64 sm:h-80 w-full relative overflow-hidden group cursor-pointer" onclick="openLightbox('https://i.ibb.co/SXHwxxBY/portada-2-2.jpg', 'Portada del Menú')">
+            <img src="https://i.ibb.co/SXHwxxBY/portada-2-2.jpg" alt="Portada Menú" class="w-full h-full object-cover opacity-60 transition-transform duration-500 group-hover:scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent"></div>
+            <!-- Botón de Zoom Portada -->
+            <button class="absolute top-4 right-4 bg-black/60 hover:bg-brand-red text-white p-2.5 rounded-full backdrop-blur-md transition-all shadow-lg text-sm flex items-center gap-2">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                <span class="hidden sm:inline text-xs font-semibold">Ver portada</span>
+            </button>
         </div>
         
         <!-- LOGO Y PRESENTACIÓN -->
         <div class="max-w-4xl mx-auto px-4 relative -mt-20 text-center pb-8">
-            <div class="inline-block relative">
-                <img src="https://i.ibb.co/zhQLhsjk/Gemini-Generated-Image-29zxg629zxg629zx.jpg" alt="Logo Logo" class="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-brand-yellow shadow-2xl mx-auto object-cover bg-white">
+            <div class="inline-block relative group cursor-pointer" onclick="openLightbox('https://i.ibb.co/zhQLhsjk/Gemini-Generated-Image-29zxg629zxg629zx.jpg', 'Logo Oficial')">
+                <img src="https://i.ibb.co/zhQLhsjk/Gemini-Generated-Image-29zxg629zxg629zx.jpg" alt="Logo Logo" class="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-brand-yellow shadow-2xl mx-auto object-cover bg-white transition-transform duration-300 group-hover:scale-105">
+                <button class="absolute bottom-2 right-2 bg-brand-red text-white w-8 h-8 rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-magnifying-glass-plus text-xs"></i>
+                </button>
             </div>
             <h1 class="text-3xl sm:text-4xl font-extrabold mt-4 tracking-tight text-white">Banderillas Coreanas <span class="text-brand-yellow">& Snacks</span></h1>
             <p class="text-gray-300 mt-2 text-sm sm:text-base font-medium max-w-md mx-auto">¡El auténtico sabor crujiente y delicioso en cada mordida! 🌭✨</p>
@@ -55,7 +63,7 @@
         
         <div class="text-center mb-12">
             <h2 class="text-3xl font-extrabold text-brand-dark inline-block border-b-4 border-brand-red pb-1">Nuestro Menú</h2>
-            <p class="text-gray-500 text-sm mt-2">Elige tus favoritos y disfruta del mejor sabor</p>
+            <p class="text-gray-500 text-sm mt-2">Elige tus favoritos y disfruta del mejor sabor (Haz clic en cualquier imagen para ampliar con zoom)</p>
         </div>
 
         <!-- GRID DE PRODUCTOS -->
@@ -63,9 +71,12 @@
 
             <!-- PRODUCTO 1: Banderilla Coreana Salada -->
             <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col border border-gray-100">
-                <div class="h-56 overflow-hidden relative">
-                    <img src="https://i.ibb.co/JFHwvw5N/Whats-App-Image-2026-09-09-at-4-03-56-PM.jpg" alt="Banderilla Coreana Salada" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
-                    <span class="absolute top-3 right-3 bg-brand-red text-white font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wider">Popular</span>
+                <div class="h-56 overflow-hidden relative group cursor-pointer" onclick="openLightbox('https://i.ibb.co/JFHwvw5N/Whats-App-Image-2026-09-09-at-4-03-56-PM.jpg', 'Banderilla Coreana Salada')">
+                    <img src="https://i.ibb.co/JFHwvw5N/Whats-App-Image-2026-09-09-at-4-03-56-PM.jpg" alt="Banderilla Coreana Salada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <span class="absolute top-3 right-3 bg-brand-red text-white font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wider shadow-md">Popular</span>
+                    <button class="absolute bottom-3 right-3 bg-black/60 hover:bg-brand-red text-white w-9 h-9 rounded-full backdrop-blur-md flex items-center justify-center transition-all shadow-lg">
+                        <i class="fa-solid fa-magnifying-glass-plus text-sm"></i>
+                    </button>
                 </div>
                 <div class="p-6 flex-grow flex flex-col justify-between">
                     <div>
@@ -103,8 +114,11 @@
 
             <!-- PRODUCTO 2: Banderilla Coreana Dulce -->
             <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col border border-gray-100">
-                <div class="h-56 overflow-hidden relative">
-                    <img src="https://i.ibb.co/7NL1YVX1/BANDERILLA-DULCE.jpg" alt="Banderilla Coreana Dulce" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                <div class="h-56 overflow-hidden relative group cursor-pointer" onclick="openLightbox('https://i.ibb.co/7NL1YVX1/BANDERILLA-DULCE.jpg', 'Banderilla Coreana Dulce')">
+                    <img src="https://i.ibb.co/7NL1YVX1/BANDERILLA-DULCE.jpg" alt="Banderilla Coreana Dulce" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <button class="absolute bottom-3 right-3 bg-black/60 hover:bg-brand-red text-white w-9 h-9 rounded-full backdrop-blur-md flex items-center justify-center transition-all shadow-lg">
+                        <i class="fa-solid fa-magnifying-glass-plus text-sm"></i>
+                    </button>
                 </div>
                 <div class="p-6 flex-grow flex flex-col justify-between">
                     <div>
@@ -127,8 +141,11 @@
 
             <!-- PRODUCTO 3: Michiboneless -->
             <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col border border-gray-100">
-                <div class="h-56 overflow-hidden relative">
-                    <img src="https://i.ibb.co/nM1VcSVT/MICHIBONLESS.jpg" alt="Michiboneless" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                <div class="h-56 overflow-hidden relative group cursor-pointer" onclick="openLightbox('https://i.ibb.co/nM1VcSVT/MICHIBONLESS.jpg', 'Michiboneless')">
+                    <img src="https://i.ibb.co/nM1VcSVT/MICHIBONLESS.jpg" alt="Michiboneless" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <button class="absolute bottom-3 right-3 bg-black/60 hover:bg-brand-red text-white w-9 h-9 rounded-full backdrop-blur-md flex items-center justify-center transition-all shadow-lg">
+                        <i class="fa-solid fa-magnifying-glass-plus text-sm"></i>
+                    </button>
                 </div>
                 <div class="p-6 flex-grow flex flex-col justify-between">
                     <div>
@@ -152,8 +169,11 @@
 
             <!-- PRODUCTO 4: Papas Cargadas -->
             <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col border border-gray-100">
-                <div class="h-56 overflow-hidden relative">
-                    <img src="https://i.ibb.co/x87pJqMy/papas-cargadas.jpg" alt="Papas Cargadas" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                <div class="h-56 overflow-hidden relative group cursor-pointer" onclick="openLightbox('https://i.ibb.co/x87pJqMy/papas-cargadas.jpg', 'Papas Cargadas')">
+                    <img src="https://i.ibb.co/x87pJqMy/papas-cargadas.jpg" alt="Papas Cargadas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <button class="absolute bottom-3 right-3 bg-black/60 hover:bg-brand-red text-white w-9 h-9 rounded-full backdrop-blur-md flex items-center justify-center transition-all shadow-lg">
+                        <i class="fa-solid fa-magnifying-glass-plus text-sm"></i>
+                    </button>
                 </div>
                 <div class="p-6 flex-grow flex flex-col justify-between">
                     <div>
@@ -168,8 +188,11 @@
 
             <!-- PRODUCTO 5: Bubble Paws -->
             <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col border border-gray-100">
-                <div class="h-56 overflow-hidden relative">
-                    <img src="https://i.ibb.co/NQySGqG/BUBBLE-PAW-MORA-AZUL.jpg" alt="Bubble Paws" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                <div class="h-56 overflow-hidden relative group cursor-pointer" onclick="openLightbox('https://i.ibb.co/NQySGqG/BUBBLE-PAW-MORA-AZUL.jpg', 'Bubble Paws')">
+                    <img src="https://i.ibb.co/NQySGqG/BUBBLE-PAW-MORA-AZUL.jpg" alt="Bubble Paws" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <button class="absolute bottom-3 right-3 bg-black/60 hover:bg-brand-red text-white w-9 h-9 rounded-full backdrop-blur-md flex items-center justify-center transition-all shadow-lg">
+                        <i class="fa-solid fa-magnifying-glass-plus text-sm"></i>
+                    </button>
                 </div>
                 <div class="p-6 flex-grow flex flex-col justify-between">
                     <div>
@@ -192,8 +215,11 @@
 
             <!-- PRODUCTO 6: Salchipapas -->
             <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col border border-gray-100">
-                <div class="h-56 overflow-hidden relative">
-                    <img src="https://i.ibb.co/Rp7V7TnP/salchipapas.jpg" alt="Salchipapas" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                <div class="h-56 overflow-hidden relative group cursor-pointer" onclick="openLightbox('https://i.ibb.co/Rp7V7TnP/salchipapas.jpg', 'Salchipapas')">
+                    <img src="https://i.ibb.co/Rp7V7TnP/salchipapas.jpg" alt="Salchipapas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <button class="absolute bottom-3 right-3 bg-black/60 hover:bg-brand-red text-white w-9 h-9 rounded-full backdrop-blur-md flex items-center justify-center transition-all shadow-lg">
+                        <i class="fa-solid fa-magnifying-glass-plus text-sm"></i>
+                    </button>
                 </div>
                 <div class="p-6 flex-grow flex flex-col justify-between">
                     <div>
@@ -208,8 +234,11 @@
 
             <!-- PRODUCTO 7: Papas a la Francesa -->
             <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col border border-gray-100">
-                <div class="h-56 overflow-hidden relative">
-                    <img src="https://i.ibb.co/3YBVp9SK/image.png" alt="Papas a la francesa" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                <div class="h-56 overflow-hidden relative group cursor-pointer" onclick="openLightbox('https://i.ibb.co/3YBVp9SK/image.png', 'Papas a la francesa')">
+                    <img src="https://i.ibb.co/3YBVp9SK/image.png" alt="Papas a la francesa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <button class="absolute bottom-3 right-3 bg-black/60 hover:bg-brand-red text-white w-9 h-9 rounded-full backdrop-blur-md flex items-center justify-center transition-all shadow-lg">
+                        <i class="fa-solid fa-magnifying-glass-plus text-sm"></i>
+                    </button>
                 </div>
                 <div class="p-6 flex-grow flex flex-col justify-between">
                     <div>
@@ -227,8 +256,11 @@
 
             <!-- PRODUCTO 8: Espiropapa -->
             <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col border border-gray-100">
-                <div class="h-56 overflow-hidden relative">
-                    <img src="https://i.ibb.co/DHFyTXrH/image.png" alt="Espiropapa" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                <div class="h-56 overflow-hidden relative group cursor-pointer" onclick="openLightbox('https://i.ibb.co/DHFyTXrH/image.png', 'Espiropapa')">
+                    <img src="https://i.ibb.co/DHFyTXrH/image.png" alt="Espiropapa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                    <button class="absolute bottom-3 right-3 bg-black/60 hover:bg-brand-red text-white w-9 h-9 rounded-full backdrop-blur-md flex items-center justify-center transition-all shadow-lg">
+                        <i class="fa-solid fa-magnifying-glass-plus text-sm"></i>
+                    </button>
                 </div>
                 <div class="p-6 flex-grow flex flex-col justify-between">
                     <div>
@@ -246,6 +278,84 @@
 
         </div>
     </main>
+
+    <!-- LIGHTBOX MODAL PARA ZOOM DE IMAGEN -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/90 hidden backdrop-blur-md flex flex-col justify-between p-4 transition-opacity duration-300">
+        <!-- Encabezado Modal -->
+        <div class="flex justify-between items-center text-white z-10 px-2 py-1">
+            <h3 id="lightbox-title" class="font-bold text-lg text-brand-yellow"></h3>
+            <button onclick="closeLightbox()" class="bg-white/20 hover:bg-brand-red text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Área de la Imagen con Zoom -->
+        <div class="relative flex-grow flex items-center justify-center overflow-hidden my-2 select-none" id="lightbox-container">
+            <img id="lightbox-img" src="" alt="Zoom" class="max-h-[80vh] max-w-full object-contain transition-transform duration-200 cursor-grab active:cursor-grabbing">
+        </div>
+
+        <!-- Barra de Controles de Zoom -->
+        <div class="flex justify-center items-center gap-3 bg-brand-dark/80 backdrop-blur-lg px-6 py-3 rounded-full mx-auto shadow-2xl border border-gray-700 text-white z-10">
+            <button onclick="adjustZoom(-0.25)" class="hover:text-brand-yellow p-2 transition-colors" title="Alejar">
+                <i class="fa-solid fa-magnifying-glass-minus text-lg"></i>
+            </button>
+            <span id="zoom-level" class="text-xs font-mono font-bold w-12 text-center text-brand-yellow">100%</span>
+            <button onclick="adjustZoom(0.25)" class="hover:text-brand-yellow p-2 transition-colors" title="Acercar">
+                <i class="fa-solid fa-magnifying-glass-plus text-lg"></i>
+            </button>
+            <div class="w-px h-5 bg-gray-600 mx-1"></div>
+            <button onclick="resetZoom()" class="hover:text-brand-yellow p-2 transition-colors text-xs font-bold flex items-center gap-1" title="Restablecer">
+                <i class="fa-solid fa-rotate-left"></i> Restablecer
+            </button>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT PARA FUNCIONALIDAD DE LIGHTBOX / ZOOM -->
+    <script>
+        let currentScale = 1;
+        const modal = document.getElementById('lightbox-modal');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxTitle = document.getElementById('lightbox-title');
+        const zoomLevelText = document.getElementById('zoom-level');
+
+        function openLightbox(imageSrc, title) {
+            lightboxImg.src = imageSrc;
+            lightboxTitle.textContent = title;
+            currentScale = 1;
+            updateImageTransform();
+            modal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        function closeLightbox() {
+            modal.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        function adjustZoom(amount) {
+            currentScale += amount;
+            if (currentScale < 0.5) currentScale = 0.5;
+            if (currentScale > 3.5) currentScale = 3.5;
+            updateImageTransform();
+        }
+
+        function resetZoom() {
+            currentScale = 1;
+            updateImageTransform();
+        }
+
+        function updateImageTransform() {
+            lightboxImg.style.transform = `scale(${currentScale})`;
+            zoomLevelText.textContent = `${Math.round(currentScale * 100)}%`;
+        }
+
+        // Cerrar con la tecla ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                closeLightbox();
+            }
+        });
+    </script>
 
     <!-- FOOTER -->
     <footer class="bg-brand-dark text-white border-t border-gray-800 mt-12 py-8 text-center text-sm">
